@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    <div>
+        <a class="main-logo" href="//www.au.dk/" itemprop="url">
+            <object data="https://www.aucdn.dk/2016/assets/img/logos.svg#au" type="image/svg+xml" alt="Aarhus University logo / Aarhus Universitets logo"  width="300px"> </object>
+        </a>
+       
+    </div>
+
+        <h1>Studielivs QR scanner </h1>
+           
+       
+    
+        <a id="btn-scan-qr">
+            <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg">
+        </a>
+    
+        <canvas hidden="" id="qr-canvas"></canvas>
+    
+        <div id="qr-result" hidden="">
+            <b>Data:</b> <span id="outputData"></span>
+        </div>
+    </div>
+    
+    <script src="./src/qrCodeScanner.js"></script>
+
+
+    
+</body>
+</html>
+
